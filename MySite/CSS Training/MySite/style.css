@@ -1,0 +1,254 @@
+/*Color Palette 
+Zorba #a6a094
+Mirage #162129
+Alpine #a98f2b
+Saddle #4e372a
+*/
+
+
+/* GLOBAL STYLES 
+------------------------------------*/
+/* Set box-sizing to border-box for all elements */
+html {
+    box-sizing: border-box;
+} 
+
+*, *:before, *after {
+    box-sizing: inherit;
+}
+
+.dm-serif-text-regular {
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .dm-serif-text-regular-italic {
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+
+/*Sets the body to take up the full height of the viewport */
+html, body {
+   height: 100%;
+}
+
+body {
+    background: #f6f6f6; 
+    margin: 0;
+}
+
+.name{
+    font-size: 3rem;
+    color: #162129;
+    font-weight: bold;
+    font-family: "DM Serif Text", serif;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h1{
+    font-size: 3em;
+    color: #162129;
+    font-family: "DM Serif Text", serif;
+    line-height: 0.5;
+}
+
+h2{
+    font-size: 2em;
+    color:#162129;
+    font-family: "DM Serif Text", serif;
+}
+
+h3{
+    font-size: 1.5em;
+    color:#162129;
+    font-family: "DM Serif Text", serif;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h4{
+    font-size: 1em;
+    color:#162129;
+    font-family: "DM Serif Text", serif;
+}
+
+p{
+    font-size: 14px;
+    color:#162129;
+    font-family: "DM Serif Text", serif;
+}
+
+li{
+    font-size: 14px;
+    color:#162129;
+    font-family: "DM Serif Text", serif;
+}
+
+/* Link styles */
+a {
+    color: #346fee;
+    font-family: "DM Serif Text", serif;
+}
+
+a:hover {
+    color:#4e372a;
+    text-decoration: none;
+}
+
+.contentwrapper {
+    margin: 0 auto;
+    padding: 30px;
+    max-width: 1000px;
+}
+
+/* HOME
+------------------------------------*/
+.home {
+    background: url(./placeholder-images/city1500px.png) no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+.home .contentwrapper {
+    flex: 1 0 auto;
+}
+
+.content-bg {
+    background: rgb(255 255 255 /0.9);
+    padding: 30px;
+
+}
+
+/* RESUME
+------------------------------------*/
+.resume {
+    background: #dad7d0;
+}
+.resume header::before{
+    content: "";
+    background: url(./placeholder-images/city1500px.png) center;
+    background-size: cover;
+    display: block;
+    height: 480px;
+}
+
+.resume-section {
+    margin-bottom: 50px;
+}
+
+.resume-section h2 {
+    margin-bottom: 40px;
+    border-bottom: 2px dashed #a98f2b;
+}
+
+.btn {
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    background: #a98f2b;
+    color: #162129;
+    font-size: 1rem;
+    font-family: "DM Serif Text", serif;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 7px;
+    border-radius: 5px;
+    line-height: 1;
+}
+
+@media screen and (max-width: 1200px) {
+    .btn {
+        position: absolute;
+    } 
+}
+
+@media screen and (max-width: 500px) {
+    .resume header::before{ 
+        height:200px;
+    } 
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1em;
+    }
+}
+
+/* Work Experience
+------------------------------------*/
+.work-item {
+    margin: 30px 0;
+}
+
+.work-details h4{
+    margin: 0;
+}
+
+
+
+@media screen and (min-width: 800px) {
+    .work-item {
+        display:grid;
+        grid-template-columns: 0.5fr 1fr;
+        column-gap: 10px;
+    }
+    .work-summary p:first-child{
+        margin-top: 0;
+    }
+}
+
+/* Education
+------------------------------------*/
+.edu-item h4{
+    margin: 0;
+}
+
+/* FOOTER
+------------------------------------*/
+footer {
+    background: #a6a094;
+}
+
+footer p {
+    color: #162129;
+    font-size: 0.8em;
+    text-align: left;
+}
+
+footer img {
+    width: 25px;
+
+}
+
+footer a {
+    color: #346fee;
+}
+
+footer a:hover {
+    color:#4e372a;
+    text-decoration: none;
+    opacity; 0.8
+}
+
+@media screen and (min-width: 800px) {
+    footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 799px) {
+    footer p {
+        text-align: center;
+        padding: 10px;
+    }
+    footer img {
+        display: block;
+        margin:0 auto;
+    }
+}
